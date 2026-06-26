@@ -1,0 +1,125 @@
+:root {
+    --bg-dark: #0f111a;
+    --card-bg: #161925;
+    --neon-blue: #00f2fe;
+    --neon-purple: #4facfe;
+    --text-light: #e2e8f0;
+    --text-muted: #94a3b8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #23283d;
+    padding-bottom: 20px;
+}
+
+h1 {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.panel {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #23283d;
+}
+
+h2 {
+    color: var(--neon-blue);
+    margin-top: 0;
+    border-bottom: 1px solid #23283d;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f111a;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    color: white;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #23283d;
+}
+
+th {
+    background-color: #1e2235;
+    color: var(--neon-blue);
+}
+
+.flex-panels {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.mvp-highlight-row {
+    background-color: rgba(255, 215, 0, 0.08) !important; 
+    border-left: 4px solid #ffd700; 
+    transition: background 0.2s ease;
+}
+
+.mvp-highlight-row:hover {
+    background-color: rgba(255, 215, 0, 0.15) !important; 
+}
